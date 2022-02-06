@@ -1,6 +1,8 @@
 var header = document.getElementById('header');
 var mobileBtn = document.getElementById('mobile-btn');
 var headerHeight = header.clientHeight;
+var sliders = document.querySelectorAll('.slider');
+
     mobileBtn.onclick = function() {
         var IsClosed = header.clientHeight === headerHeight;
             if (IsClosed) {
@@ -22,6 +24,20 @@ for (var i = 0; i<menuItems.length; i++) {
     }
 }
 
+var index = 0;
+function moveSlider(){
+    for (var i = 0; i < sliders.length; i++){
+        sliders[i].style.display = 'none';
+    }
+    
+    index ++;
+    if(index > sliders.length){
+        index = 1;
+    }
+    sliders[index-1].style.display = 'block';
+    setTimeout(moveSlider, 3000);
+}
+moveSlider();
 
 /**
  * 
