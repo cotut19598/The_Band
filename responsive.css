@@ -1,0 +1,57 @@
+@media(max-width: 470px){
+    .text-align{
+        text-align: center;
+    }
+
+
+    #header{
+    overflow: hidden;
+    }
+
+    #nav{
+        display: block;
+    }
+    #nav li:first-child{
+        display: inline-block;
+    }
+
+    #nav > li {
+        display: block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    #nav .sub-nav{
+        position: initial;
+        background-color: #333;
+    }
+
+     #nav .sub-nav a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    .member-items{
+        width: 100%;
+    }
+
+    .place-items{
+        width: 100%;
+    }
+
+    #contact .row .col-hi,
+    .s-full-width
+    {
+        width: 100%;
+    }
+
+    .mb-16{
+        margin-bottom: 8px;
+    }
+}

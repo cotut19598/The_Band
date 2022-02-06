@@ -1,0 +1,411 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Common */
+
+.form-size-18{
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.form-size-15{
+    font-size: 15px;
+}
+
+.pd-32{
+    padding: 32px 0;
+}
+
+.pd-8{
+    padding: 8px;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+
+.col::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.col-second{
+    width: 50%;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+#header{
+    position: fixed;
+    background-color: #000;
+    height: 46px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav > li > a{
+    color: #fff;
+    text-transform: uppercase;
+
+}
+
+#nav li a{
+    text-decoration: none;
+    padding: 0 24px;
+    line-height: 46px;
+    font-size: 15px;
+    display: block;
+}
+
+#nav > li{
+    display: inline-block;
+
+}
+
+#nav li{ 
+    position: relative;
+}
+
+#nav .sub-nav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .sub-nav a{
+    color: #000;
+    display: block;
+    line-height: 38px;
+    padding: 0 12px;
+    min-width: 160px;
+}
+
+#nav>li:hover>a,
+.sub-nav li:hover a
+{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav li:hover .sub-nav{
+    display: block;
+}
+
+#nav , .sub-nav{
+    list-style: none;
+}
+
+.ti-arrow-down{
+    font-size: 12px;
+}
+
+.menu-btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    float: right;
+    line-height: 46px;
+    padding: 0 23px;
+    color: #fff;
+    display: none;
+}
+
+.search-btn{
+    float: right;
+    line-height: 46px;
+    padding: 0 23px;
+    color: #fff;
+}
+
+
+.menu-tbn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.ti-search{
+    color: #fff;
+}
+
+.search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#slider{
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px;
+    background: url(/image/la.jpg) top center /cover no-repeat;
+}
+.slider-text{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 32px 16px;
+    color: #fff;
+}
+
+.slider-place{
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.slider-discription{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+
+
+.header-box{
+    max-width: 800px;
+    padding: 64px 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.the-band{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.band-discription{
+    text-align: center;
+    font-size: 15px;
+    margin: 15px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.band-content{
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: justify;
+    margin: 15px 0;
+}
+
+.member-list{
+    padding: 32px 0;
+}
+
+.member-items{
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+}
+
+.member-name{
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+
+
+.member-avt{
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+
+.box-dad{
+    background: #000;
+}
+
+.tour-date{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.tour-date li{
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    font-size: 15px;
+    list-style: none;
+}
+
+.sold-out{
+    color: #fff;
+    background-color: #f44336;
+    padding: 3px 6px;
+    margin-left: 16px;
+}
+
+.quarify{
+    float: right;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    margin-top: -4px;
+}
+
+.place-list{
+    padding: 32px 0;
+    margin-left: -8px;
+    margin-right: -8px;
+
+}
+
+.place-items{
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+    margin-bottom: 16px;
+}
+
+.place-avt{
+    width: 100%;
+}
+
+.place-avt:hover{
+    opacity: 0.6;
+}
+
+.place-text{
+    background-color: #fff;
+    margin-top: -4px;
+    padding: 0 16px;
+}
+
+.place-where{
+    padding: 15px 0;
+    font-size: 15px;
+}
+
+
+
+.place-time{
+    font-size: 15px;
+    opacity: 0.6;
+    margin-bottom: 15px;
+}
+
+.place-discription{
+    line-height: 1.4;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.place-buy{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 13px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.place-buy:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.box-contact{
+    padding: 32px 0;
+    display: inline-block;
+}
+
+
+.ti-location-pin, .ti-mobile, .ti-email{
+    margin-right: 10px;
+}
+
+.form-btn{
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.send-btn{
+    margin:16px 0;
+    background-color: #000;
+    color: #fff;
+    float: right;
+    border: 1px solid #000;
+    padding: 10px 16px;
+}
+
+.send-btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+.map-tooter{
+    width: 100%;
+    opacity: 0.8;
+}
+
+.tooter-icon{
+    text-align: center;
+    padding-top: 64px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+
+}
+
+.tooter-link,
+.link-w3{
+    text-align: center;
+    padding-bottom: 64px;
+    margin: 15px 0;
+    opacity: 0.8;
+
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
