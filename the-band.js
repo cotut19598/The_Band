@@ -26,14 +26,14 @@ for (var i = 0; i<menuItems.length; i++) {
 
 var index = 0;
 function moveSlider(){
-    for (var i = 0; i < sliders.length; i++){
-        sliders[i].style.display = 'none';
-    }
-    
     index ++;
+    sliders.forEach(function(slider){
+        slider.style.display = 'none';
+    })
     if(index > sliders.length){
         index = 1;
     }
+    console.log(index);
     sliders[index-1].style.display = 'block';
     setTimeout(moveSlider, 3000);
 }
