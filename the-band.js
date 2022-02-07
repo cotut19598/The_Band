@@ -24,20 +24,21 @@ for (var i = 0; i<menuItems.length; i++) {
     }
 }
 
-var index = 0;
+var indexCurrent = 0;
 function moveSlider(){
-    sliders.forEach(function(slider){
-        slider.style.display = 'none';
-    })
-    index ++;
-    if(index > sliders.length){
-        index = 1;
+    sliders.forEach(element => {
+        element.style.display = 'none';
+    });
+    
+    indexCurrent++;
+    if(indexCurrent > sliders.length){
+        indexCurrent = 1;
     }
-    sliders[index-1].style.display = "block"
-    setTimeout(moveSlider, 3000);
+    sliders[indexCurrent-1].style.display = 'block';
+    setTimeout(moveSlider,3000);
 }
-moveSlider();
 
+moveSlider();
 
 
 
