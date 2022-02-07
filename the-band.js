@@ -29,9 +29,8 @@ function moveSlider(){
     sliders.forEach(function(slider){
         slider.style.display = 'none';
     })
-    var sliders.length = max;
     index ++;
-    if(index > max){
+    if(index > sliders.length){
         index = 1;
     }
     sliders.style.display = "block"
