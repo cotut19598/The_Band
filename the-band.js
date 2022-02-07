@@ -26,15 +26,15 @@ for (var i = 0; i<menuItems.length; i++) {
 
 var index = 0;
 function moveSlider(){
-    index ++;
     sliders.forEach(function(slider){
         slider.style.display = 'none';
     })
-    if(index > sliders.length){
+    var sliders.length = max;
+    index ++;
+    if(index > max){
         index = 1;
     }
-    console.log(index);
-    sliders[index-1].style.display = 'block';
+    sliders.style.display = "block"
     setTimeout(moveSlider, 3000);
 }
 moveSlider();
