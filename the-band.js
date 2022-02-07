@@ -33,7 +33,7 @@ function moveSlider(){
     if(index > sliders.length){
         index = 1;
     }
-    sliders.style.display = "block"
+    sliders[index-1].style.display = "block"
     setTimeout(moveSlider, 3000);
 }
 moveSlider();
